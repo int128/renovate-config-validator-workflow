@@ -1,2 +1,3 @@
 # renovate-config-validator-workflow
-Reusable workflow to validate your Renovate config
+
+The reusable workflow to run `renovate-config-validator`.
