@@ -1,0 +1,10 @@
+{
+  "private": true,
+  "scripts": {
+    "test": "renovate-config-validator --strict"
+  },
+  "devDependencies": {
+    "renovate": "38.142.5"
+  },
+  "packageManager": "pnpm@9.12.3"
+}
