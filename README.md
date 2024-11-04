@@ -5,19 +5,23 @@ This is a reusable workflow to run [`renovate-config-validator`](https://docs.re
 ## Getting Started
 
 ```yaml
-name: validate
+name: renovate-config
 
 on:
   pull_request:
+    paths:
+      - .github/workflows/renovate-config.yaml
+      - .github/renovate.*
   push:
     branches:
       - main
+    paths:
+      - .github/workflows/renovate-config.yaml
+      - .github/renovate.*
 
 jobs:
   validate:
     uses: int128/renovate-config-validator-workflow/.github/workflows/validate.yaml@main
-    with:
-      config: .github/renovate.* *.json
 ```
 
 ## How it works
