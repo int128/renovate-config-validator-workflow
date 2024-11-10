@@ -3,5 +3,14 @@
   "extends": [
     "github>int128/renovate-base",
     "helpers:pinGitHubActionDigests"
+  ],
+  "packageRules": [
+    {
+      "description": "Automerge major version update",
+      "matchPackageNames": [
+        "renovate"
+      ],
+      "automerge": true
+    }
   ]
 }
