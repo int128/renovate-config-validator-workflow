@@ -9,8 +9,8 @@ importers:
   .:
     devDependencies:
       renovate:
-        specifier: 39.15.2
-        version: 39.15.2(@aws-sdk/client-sso-oidc@3.687.0(@aws-sdk/client-sts@3.687.0))(encoding@0.1.13)(typanion@3.14.0)
+        specifier: 39.15.3
+        version: 39.15.3(@aws-sdk/client-sso-oidc@3.687.0(@aws-sdk/client-sts@3.687.0))(encoding@0.1.13)(typanion@3.14.0)
 
 packages:
 
@@ -331,10 +331,6 @@ packages:
 
   '@one-ini/wasm@0.1.1':
     resolution: {integrity: sha512-XuySG1E38YScSJoMlqovLru4KTUNSjgVTIjyh7qMX6aNN5HY5Ct5LhRJdxO79JtTzKfzV/bnWpz+zquYrISsvw==}
-
-  '@opentelemetry/api-logs@0.54.1':
-    resolution: {integrity: sha512-tFOyYT8tFRSuUc+pEXnHG99270y7K8MSBLQSPiYBJ/0cgCp+8KmSej4joBfah0JoXAwbPzMCom3ri0xsiYbLvg==}
-    engines: {node: '>=14'}
 
   '@opentelemetry/api-logs@0.54.2':
     resolution: {integrity: sha512-4MTVwwmLgUh5QrJnZpYo6YRO5IBLAggf2h8gWDblwRagDStY13aEvt7gGk3jewrMaPlHiF83fENhIx0HO97/cQ==}
@@ -2314,8 +2310,8 @@ packages:
   remark@13.0.0:
     resolution: {integrity: sha512-HDz1+IKGtOyWN+QgBiAT0kn+2s6ovOxHyPAFGKVE81VSzJ+mq7RwHFledEvB5F1p4iJvOah/LOKdFuzvRnNLCA==}
 
-  renovate@39.15.2:
-    resolution: {integrity: sha512-Aki531/0FVKmjXn89Tb0TERJAWQKwpc4oe0qK5Nu0QUMJiPRImpIgQOohBQijvf2mZsn+btlaeozOO3Pg68waA==}
+  renovate@39.15.3:
+    resolution: {integrity: sha512-g00BEF4CgH/PqGdU0sRdPFsIIM9auvxSTEP61zA4UNRlwbv6yrtPpDbk+aaRJClmCpAjr4NRpcLPxWOthfc/4Q==}
     engines: {node: ^20.15.1 || ^22.11.0, pnpm: ^9.0.0}
     hasBin: true
 
@@ -3745,10 +3741,6 @@ snapshots:
 
   '@one-ini/wasm@0.1.1': {}
 
-  '@opentelemetry/api-logs@0.54.1':
-    dependencies:
-      '@opentelemetry/api': 1.9.0
-
   '@opentelemetry/api-logs@0.54.2':
     dependencies:
       '@opentelemetry/api': 1.9.0
@@ -3776,7 +3768,7 @@ snapshots:
   '@opentelemetry/instrumentation-bunyan@0.42.0(@opentelemetry/api@1.9.0)':
     dependencies:
       '@opentelemetry/api': 1.9.0
-      '@opentelemetry/api-logs': 0.54.1
+      '@opentelemetry/api-logs': 0.54.2
       '@opentelemetry/instrumentation': 0.54.2(@opentelemetry/api@1.9.0)
       '@types/bunyan': 1.8.9
     transitivePeerDependencies:
@@ -6059,7 +6051,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  renovate@39.15.2(@aws-sdk/client-sso-oidc@3.687.0(@aws-sdk/client-sts@3.687.0))(encoding@0.1.13)(typanion@3.14.0):
+  renovate@39.15.3(@aws-sdk/client-sso-oidc@3.687.0(@aws-sdk/client-sts@3.687.0))(encoding@0.1.13)(typanion@3.14.0):
     dependencies:
       '@aws-sdk/client-codecommit': 3.687.0
       '@aws-sdk/client-ec2': 3.687.0
