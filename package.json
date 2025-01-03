@@ -4,7 +4,7 @@
     "test": "renovate-config-validator --strict"
   },
   "devDependencies": {
-    "renovate": "39.88.0"
+    "renovate": "39.90.1"
   },
   "packageManager": "pnpm@9.15.2"
 }
