@@ -30,7 +30,7 @@ jobs:
         with:
           node-version-file: int128-renovate-config-validator-workflow/.node-version
           cache-dependency-path: int128-renovate-config-validator-workflow/pnpm-lock.yaml
-      - run: corepack enable pnpm
+      - run: npm install -g pnpm@latest-10
         working-directory: int128-renovate-config-validator-workflow
       - run: pnpm i
         working-directory: int128-renovate-config-validator-workflow
