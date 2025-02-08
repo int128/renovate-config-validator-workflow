@@ -4,7 +4,7 @@
     "test": "renovate-config-validator --strict"
   },
   "devDependencies": {
-    "@eslint/js": "9.19.0",
+    "@eslint/js": "9.20.0",
     "pnpm": "10.2.1",
     "renovate": "39.162.1"
   },
