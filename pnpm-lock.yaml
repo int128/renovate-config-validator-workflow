@@ -15,8 +15,8 @@ importers:
         specifier: 10.4.1
         version: 10.4.1
       renovate:
-        specifier: 39.177.0
-        version: 39.177.0(encoding@0.1.13)(typanion@3.14.0)
+        specifier: 39.177.1
+        version: 39.177.1(encoding@0.1.13)(typanion@3.14.0)
 
 packages:
 
@@ -285,10 +285,6 @@ packages:
 
   '@one-ini/wasm@0.1.1':
     resolution: {integrity: sha512-XuySG1E38YScSJoMlqovLru4KTUNSjgVTIjyh7qMX6aNN5HY5Ct5LhRJdxO79JtTzKfzV/bnWpz+zquYrISsvw==}
-
-  '@opentelemetry/api-logs@0.57.1':
-    resolution: {integrity: sha512-I4PHczeujhQAQv6ZBzqHYEUiggZL4IdSMixtVD3EYqbdrjujE7kRfI5QohjlPoJm8BvenoW5YaTMWRrbpot6tg==}
-    engines: {node: '>=14'}
 
   '@opentelemetry/api-logs@0.57.2':
     resolution: {integrity: sha512-uIX52NnTM0iBh84MShlpouI7UKqkZ7MrUszTmaypHBu4r7NofznSnQRfJ+uUeDtQDj6w8eFGg5KBLDAwAPz1+A==}
@@ -2347,8 +2343,8 @@ packages:
   remark@13.0.0:
     resolution: {integrity: sha512-HDz1+IKGtOyWN+QgBiAT0kn+2s6ovOxHyPAFGKVE81VSzJ+mq7RwHFledEvB5F1p4iJvOah/LOKdFuzvRnNLCA==}
 
-  renovate@39.177.0:
-    resolution: {integrity: sha512-GhuKV8wL4Evb/E2/GjdnN1CbV3SmY7PQbEKG1iogPx3NXlbeVeOPqR4J7GJdrKSlvcERiTc+DFqZxj+pnqlYVQ==}
+  renovate@39.177.1:
+    resolution: {integrity: sha512-yt/RdJ1R+0f+HHod1Apmy0Qgf4m5+S9gKHlZgnm5QI5fLHGibOER7tHPtij8X0ln2a8VLt57hZVwPGrIXC6DzQ==}
     engines: {node: ^20.15.1 || ^22.11.0, pnpm: ^10.0.0}
     hasBin: true
 
@@ -3691,10 +3687,6 @@ snapshots:
 
   '@one-ini/wasm@0.1.1': {}
 
-  '@opentelemetry/api-logs@0.57.1':
-    dependencies:
-      '@opentelemetry/api': 1.9.0
-
   '@opentelemetry/api-logs@0.57.2':
     dependencies:
       '@opentelemetry/api': 1.9.0
@@ -3722,7 +3714,7 @@ snapshots:
   '@opentelemetry/instrumentation-bunyan@0.45.0(@opentelemetry/api@1.9.0)':
     dependencies:
       '@opentelemetry/api': 1.9.0
-      '@opentelemetry/api-logs': 0.57.1
+      '@opentelemetry/api-logs': 0.57.2
       '@opentelemetry/instrumentation': 0.57.2(@opentelemetry/api@1.9.0)
       '@types/bunyan': 1.8.9
     transitivePeerDependencies:
@@ -6068,7 +6060,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  renovate@39.177.0(encoding@0.1.13)(typanion@3.14.0):
+  renovate@39.177.1(encoding@0.1.13)(typanion@3.14.0):
     dependencies:
       '@aws-sdk/client-codecommit': 3.738.0
       '@aws-sdk/client-ec2': 3.738.0
