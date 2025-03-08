@@ -9,8 +9,8 @@ importers:
   .:
     devDependencies:
       '@eslint/js':
-        specifier: 9.21.0
-        version: 9.21.0
+        specifier: 9.22.0
+        version: 9.22.0
       pnpm:
         specifier: 10.6.1
         version: 10.6.1
@@ -237,8 +237,8 @@ packages:
   '@cdktf/hcl2json@0.20.11':
     resolution: {integrity: sha512-k4CJkbUPyI+k9KOQjJ6qu2dIrpqSkXukt9R+kDaizWVM4yc8HDMLHnelC0X2oWsfeQNE8wSAm20SXkGlPLoFmw==}
 
-  '@eslint/js@9.21.0':
-    resolution: {integrity: sha512-BqStZ3HX8Yz6LvsF5ByXYrtigrV5AXADWLAGc7PH/1SxOb7/FIYYMszZZWiUou/GB9P2lXWk2SV4d+Z8h0nknw==}
+  '@eslint/js@9.22.0':
+    resolution: {integrity: sha512-vLFajx9o8d1/oL2ZkpMYbkLv8nDB6yaIwFNt7nI4+I80U/z03SxmfOMsLbvWr3p7C+Wnoh//aOu2pQW8cS0HCQ==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
 
   '@gwhitney/detect-indent@7.0.1':
@@ -3620,7 +3620,7 @@ snapshots:
     dependencies:
       fs-extra: 11.2.0
 
-  '@eslint/js@9.21.0': {}
+  '@eslint/js@9.22.0': {}
 
   '@gwhitney/detect-indent@7.0.1': {}
 
