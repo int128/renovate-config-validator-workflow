@@ -5,8 +5,8 @@
   },
   "devDependencies": {
     "@eslint/js": "9.28.0",
-    "pnpm": "10.11.0",
+    "pnpm": "10.11.1",
     "renovate": "40.37.1"
   },
-  "packageManager": "pnpm@10.11.0"
+  "packageManager": "pnpm@10.11.1"
 }
