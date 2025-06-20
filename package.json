@@ -1,12 +1,10 @@
 {
   "private": true,
+  "type": "module",
   "scripts": {
     "test": "renovate-config-validator --strict"
   },
   "devDependencies": {
-    "@eslint/js": "9.29.0",
-    "pnpm": "10.12.1",
     "renovate": "40.62.1"
-  },
-  "packageManager": "pnpm@10.12.1"
+  }
 }

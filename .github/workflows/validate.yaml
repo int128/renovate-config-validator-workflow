@@ -30,9 +30,7 @@ jobs:
         with:
           node-version-file: int128-renovate-config-validator-workflow/.node-version
           cache-dependency-path: int128-renovate-config-validator-workflow/pnpm-lock.yaml
-      - run: npm install -g pnpm@latest-10
-        working-directory: int128-renovate-config-validator-workflow
-      - run: pnpm i
+      - run: npm i
         working-directory: int128-renovate-config-validator-workflow
       - run: |
-          "$(cd int128-renovate-config-validator-workflow && pnpm root)/.bin/renovate-config-validator" --strict ${{ inputs.config }}
+          "int128-renovate-config-validator-workflow/node_modules/.bin/renovate-config-validator" --strict ${{ inputs.config }}
