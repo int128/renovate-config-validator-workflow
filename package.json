@@ -5,6 +5,6 @@
     "test": "renovate-config-validator --strict"
   },
   "devDependencies": {
-    "renovate": "41.58.2"
+    "renovate": "41.60.2"
   }
 }
