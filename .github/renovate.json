@@ -8,7 +8,7 @@
     {
       "description": "Automerge major version update",
       "matchPackageNames": [
-        "renovate"
+        "renovatebot/github-action"
       ],
       "automerge": true
     }
