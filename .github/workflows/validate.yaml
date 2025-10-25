@@ -4,7 +4,7 @@ on:
   workflow_call:
     inputs:
       config:
-        description: Path(s) to renovate.json
+        description: Argument(s) to renovate-config-validator
         required: false
         type: string
       runs-on:
@@ -17,21 +17,22 @@ jobs:
   validate:
     runs-on: ${{ inputs.runs-on }}
     timeout-minutes: 10
+    permissions:
+      contents: read
     steps:
       - uses: actions/checkout@08c6903cd8c0fde910a37f88322edcfb5dd907a8 # v5.0.0
-      - uses: actions/checkout@08c6903cd8c0fde910a37f88322edcfb5dd907a8 # v5.0.0
-        with:
-          path: int128-renovate-config-validator-workflow
-          repository: int128/renovate-config-validator-workflow
-          ref: ${{ github.job_workflow_sha }}
-          # Fetch only the root files
-          sparse-checkout: .
-      - uses: actions/setup-node@2028fbc5c25fe9cf00d9f06a71cc4710d4507903 # v6.0.0
-        with:
-          node-version-file: int128-renovate-config-validator-workflow/.node-version
-          cache-dependency-path: int128-renovate-config-validator-workflow/pnpm-lock.yaml
-          package-manager-cache: false
-      - run: npm i
-        working-directory: int128-renovate-config-validator-workflow
       - run: |
-          "int128-renovate-config-validator-workflow/node_modules/.bin/renovate-config-validator" --strict ${{ inputs.config }}
+          set -eux -o pipefail
+          echo "$script" > renovate-config-validator.sh
+          chmod +x renovate-config-validator.sh
+        env:
+          script: |
+            #!/bin/bash
+            set -eux -o pipefail
+            cd /workspace
+            exec renovate-config-validator ${{ inputs.config }}
+      - uses: renovatebot/github-action@70ea19f1b0dc8a9cc7af1b4278f8d3fd9778b577 # v43.0.17
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          docker-cmd-file: renovate-config-validator.sh
+          docker-volumes: ${{ github.workspace }}:/workspace
