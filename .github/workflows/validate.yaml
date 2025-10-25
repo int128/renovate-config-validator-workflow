@@ -4,7 +4,7 @@ on:
   workflow_call:
     inputs:
       config:
-        description: Path(s) to renovate.json
+        description: Argument(s) to renovate-config-validator
         required: false
         type: string
       runs-on:
